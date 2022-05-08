@@ -17,6 +17,7 @@ import "./index.css";
 //   }
 // }
 
+// 方格组件
 function Square(props) {
   return (
     <button className="square" onClick={props.onClick}>
@@ -25,6 +26,7 @@ function Square(props) {
   );
 }
 
+// 棋盘父组件
 class Board extends React.Component {
   renderSquare(i) {
     return (
@@ -58,6 +60,7 @@ class Board extends React.Component {
   }
 }
 
+// 游戏界面组件
 class Game extends React.Component {
   constructor(props) {
     super(props);
